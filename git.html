@@ -24,18 +24,46 @@
     
     <ul>
         <li> 
-            Creacion de repositorio nuevo <p>Se puede crear un nuevo repositorio o espacio de trabajo</p> 
+            <strong>Creacion de repositorio nuevo</strong><p>Se puede crear un nuevo repositorio o espacio de trabajo</p> 
         </li>
         <li> 
-            Realizar checkout a un repositorio <p> realizacion de copias locales del reposiorio, o utilizando un servidor remoto.</p>
+            <strong>Realizar checkout a un repositorio</strong> <p>realizacion de copias locales del reposiorio, o utilizando un servidor remoto.</p>
         </li>
-        <li> Flujo de trabajo </li>
-        <li> Add & commit </li>
-        <li> Envío de cambios </li>
-        <li> Ramas </li>
-        <li> Actualizar y fusionar </li>
-        <li> Etiquetas </li>
-        <li> Cambios locales </li>
+        <li> 
+            <strong>Flujo de trabajo</strong>
+            <p>El repositorio local esta compuesto por tres "árboles" administrados por git. El primero es el directorio de trabajo que contiene los archivos, el segundo es el Index que actua como una zona intermedia, y el último es el HEAD que apunta al último commit realizado.
+            </p>
+        </li>
+        <li> 
+            <strong>Add & commit</strong> 
+            <p>El primer paso en el flujo de trabajo básico es registrar cambios (añadirlos al Index) usando (git add). Y hacer commit a estos cambios. En ese momento el archivo esta incluído en el HEAD, pero aún no en tu repositorio remoto.
+            </p> 
+        </li>
+        <li> 
+            <strong>Envío de cambios</strong>
+            <p>Para enviar estos cambios al repositorio remoto se debe ejecutar (git push origin master) Reemplazar master por la rama a la que  se quiere enviar los cambios. Ahora se puede subir los cambios al repositorio remoto seleccionado.
+            </p>
+        </li>
+        <li> 
+            <strong>Ramas</strong> 
+            <p>Las ramas son utilizadas para desarrollar funcionalidades aisladas unas de otras. La rama master es la rama "por defecto" cuando se crea un repositorio, Una rama nueva no estará disponible para los demás a menos que se suba (push) la rama al repositorio remoto.
+            </p>
+        </li>
+        <li> 
+            <strong>Actualizar y fusionar</strong> 
+            <p>Para actualizar el repositorio local al commit más nuevo, se debe ejecutar (pull), git intentará fusionar automáticamente los cambios. Desafortunadamente, no siempre será posible y se podrán producir conflictos. estos errores se deben resolver y fusionar esos conflictos manualmente. 
+            </p> 
+        </li>
+        <li> 
+            <strong> Cambios locales </strong> 
+            <p> Se puede reemplazar cambios locales usando el comando (git checkout). Este comando reemplaza los cambios en el directorio de trabajo con el último contenido de HEAD. Los cambios que ya han sido agregados al Index, así como también los nuevos archivos, se mantendrán sin cambio. Se puede deshacer todos los cambios locales y commits, trayendo la última versión del servidor y apuntando a la copia local principal.
+             </p> 
+        </li>
+    
     </ul>
+<p> 
+    <strong> Aquí les dejo el enlace de donde saque la información :)</strong><a href="http://rogerdudler.github.io/git-guide/index.es.html"> GIT LA GUIA SENCILLA <a/> 
+</p>
+
   </body>
 </html>
