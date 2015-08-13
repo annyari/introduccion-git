@@ -1,69 +1,72 @@
 <html>
-  <head>
-    <title>Introducción a Git</title> 
-    <a> 
-    <img src ="http://git-scm.com/images/logo@2x.png"
-    </a>
-  </head>
-  <body> 
-    <h1>Introduccion a Git</h1>
-    <p><h3><strong>¿Que es Git?</strong></h3></p> 
-    <p>
-        Git <strong>(pronunciado "guit"2)</strong> es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente.
-    </p> 
+    <head>
+        <title>Introducción a Git</title> 
+    </head>
+    <body>
+        <a>
+            <img src ="http://git-scm.com/images/logo@2x.png">
+        </a>
 
-    <p>
-        Git se pensó como un motor de bajo nivel sobre el cual otros pudieran escribir la interfaz de usuario o front end como <a href="https://es.wikipedia.org/wiki/Cogito_(software)"> Cogito.</a> Sin embargo, Git se ha convertido desde entonces en un sistema de control de versiones con funcionalidad plena. Hay algunos proyectos de mucha relevancia que ya usan Git, en particular, el grupo de programación del núcleo Linux.
-    </p>
+        <h1>Introduccion a Git</h1>
 
-    <p>
-        El mantenimiento del software Git está actualmente supervisado por <a href="https://en.wikipedia.org/wiki/Junio_Hamano"> Junio Hamano</a>, quien recibe contribuciones al código de alrededor de 280 programadores.
-    </p>
+        <h3><strong>¿Que es Git?</strong></h3>
 
-    <h3><strong>¿Como funciona?</strong></h3>
-    
-    <ul>
-        <li> 
-            <strong>Creacion de repositorio nuevo</strong><p>Se puede crear un nuevo repositorio o espacio de trabajo</p> 
-        </li>
-        <li> 
-            <strong>Realizar checkout a un repositorio</strong> <p>realizacion de copias locales del reposiorio, o utilizando un servidor remoto.</p>
-        </li>
-        <li> 
-            <strong>Flujo de trabajo</strong>
-            <p>El repositorio local esta compuesto por tres "árboles" administrados por git. El primero es el directorio de trabajo que contiene los archivos, el segundo es el Index que actua como una zona intermedia, y el último es el HEAD que apunta al último commit realizado.
-            </p>
-        </li>
-        <li> 
-            <strong>Add & commit</strong> 
-            <p>El primer paso en el flujo de trabajo básico es registrar cambios (añadirlos al Index) usando (git add). Y hacer commit a estos cambios. En ese momento el archivo esta incluído en el HEAD, pero aún no en tu repositorio remoto.
-            </p> 
-        </li>
-        <li> 
-            <strong>Envío de cambios</strong>
-            <p>Para enviar estos cambios al repositorio remoto se debe ejecutar (git push origin master) Reemplazar master por la rama a la que  se quiere enviar los cambios. Ahora se puede subir los cambios al repositorio remoto seleccionado.
-            </p>
-        </li>
-        <li> 
-            <strong>Ramas</strong> 
-            <p>Las ramas son utilizadas para desarrollar funcionalidades aisladas unas de otras. La rama master es la rama "por defecto" cuando se crea un repositorio, Una rama nueva no estará disponible para los demás a menos que se suba (push) la rama al repositorio remoto.
-            </p>
-        </li>
-        <li> 
-            <strong>Actualizar y fusionar</strong> 
-            <p>Para actualizar el repositorio local al commit más nuevo, se debe ejecutar (pull), git intentará fusionar automáticamente los cambios. Desafortunadamente, no siempre será posible y se podrán producir conflictos. estos errores se deben resolver y fusionar esos conflictos manualmente. 
-            </p> 
-        </li>
-        <li> 
-            <strong> Cambios locales </strong> 
-            <p> Se puede reemplazar cambios locales usando el comando (git checkout). Este comando reemplaza los cambios en el directorio de trabajo con el último contenido de HEAD. Los cambios que ya han sido agregados al Index, así como también los nuevos archivos, se mantendrán sin cambio. Se puede deshacer todos los cambios locales y commits, trayendo la última versión del servidor y apuntando a la copia local principal.
-             </p> 
-        </li>
-    
-    </ul>
-<p> 
-    <strong> Aquí les dejo el enlace de donde saque la información :)</strong><a href="http://rogerdudler.github.io/git-guide/index.es.html"> GIT LA GUIA SENCILLA <a/> 
-</p>
+        <p>
+            Git <strong>(pronunciado "guit"2)</strong> es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente.
+        </p> 
 
-  </body>
+        <p>
+            Git se pensó como un motor de bajo nivel sobre el cual otros pudieran escribir la interfaz de usuario o front end como <a href="https://es.wikipedia.org/wiki/Cogito_(software)"> Cogito.</a> Sin embargo, Git se ha convertido desde entonces en un sistema de control de versiones con funcionalidad plena. Hay algunos proyectos de mucha relevancia que ya usan Git, en particular, el grupo de programación del núcleo Linux.
+        </p>
+
+        <p>
+            El mantenimiento del software Git está actualmente supervisado por <a href="https://en.wikipedia.org/wiki/Junio_Hamano"> Junio Hamano</a>, quien recibe contribuciones al código de alrededor de 280 programadores.
+        </p>
+
+        <h3><strong>¿Como funciona?</strong></h3>
+        
+        <ul>
+            <li> 
+                <strong>Creacion de repositorio nuevo</strong><p>Se puede crear un nuevo repositorio o espacio de trabajo</p> 
+            </li>
+            <li> 
+                <strong>Realizar checkout a un repositorio</strong> <p>realizacion de copias locales del reposiorio, o utilizando un servidor remoto.</p>
+            </li>
+            <li> 
+                <strong>Flujo de trabajo</strong>
+                <p>El repositorio local esta compuesto por tres "árboles" administrados por git. El primero es el directorio de trabajo que contiene los archivos, el segundo es el Index que actua como una zona intermedia, y el último es el HEAD que apunta al último commit realizado.
+                </p>
+            </li>
+            <li> 
+                <strong>Add & commit</strong> 
+                <p>El primer paso en el flujo de trabajo básico es registrar cambios (añadirlos al Index) usando (git add). Y hacer commit a estos cambios. En ese momento el archivo esta incluído en el HEAD, pero aún no en tu repositorio remoto.
+                </p> 
+            </li>
+            <li> 
+                <strong>Envío de cambios</strong>
+                <p>Para enviar estos cambios al repositorio remoto se debe ejecutar (git push origin master) Reemplazar master por la rama a la que  se quiere enviar los cambios. Ahora se puede subir los cambios al repositorio remoto seleccionado.
+                </p>
+            </li>
+            <li> 
+                <strong>Ramas</strong> 
+                <p>Las ramas son utilizadas para desarrollar funcionalidades aisladas unas de otras. La rama master es la rama "por defecto" cuando se crea un repositorio, Una rama nueva no estará disponible para los demás a menos que se suba (push) la rama al repositorio remoto.
+                </p>
+            </li>
+            <li> 
+                <strong>Actualizar y fusionar</strong> 
+                <p>Para actualizar el repositorio local al commit más nuevo, se debe ejecutar (pull), git intentará fusionar automáticamente los cambios. Desafortunadamente, no siempre será posible y se podrán producir conflictos. estos errores se deben resolver y fusionar esos conflictos manualmente. 
+                </p> 
+            </li>
+            <li> 
+                <strong> Cambios locales </strong> 
+                <p> Se puede reemplazar cambios locales usando el comando (git checkout). Este comando reemplaza los cambios en el directorio de trabajo con el último contenido de HEAD. Los cambios que ya han sido agregados al Index, así como también los nuevos archivos, se mantendrán sin cambio. Se puede deshacer todos los cambios locales y commits, trayendo la última versión del servidor y apuntando a la copia local principal.
+                 </p> 
+            </li>
+        
+        </ul>
+        <p>
+            <strong> Aquí les dejo el enlace de donde saque la información :)</strong><a href="http://rogerdudler.github.io/git-guide/index.es.html"> GIT LA GUIA SENCILLA <a/> 
+        </p>
+
+    </body>
 </html>
