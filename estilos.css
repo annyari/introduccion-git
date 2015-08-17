@@ -11,7 +11,9 @@ h2 {
   font-family: 'Courier New', monospace;
 }
 
+h3.naty{color: #37B8DB;
 
+}
 p {
   color: gray;
 }
@@ -23,6 +25,8 @@ p {
 p.otroslinks.links {
   color: red;
 }
+
+
 
 
 li {
