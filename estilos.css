@@ -30,8 +30,12 @@ p.otroslinks.links {
 
 
 li {
-  font-size: .9em;
+  font-size: 12px;
 }
+
+li {font-family: Arial; Helvetica;
+}
+
 
 li.impar {
   color: #892C91;
@@ -40,3 +44,4 @@ li.impar {
 li.par {
   color: rgb(54, 117, 29);
 }
+
