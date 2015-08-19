@@ -1,36 +1,36 @@
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
 }
 
 h1 {
-  font-family: Georgia, 'Times New Roman', serif;
+    font-family: Georgia, 'Times New Roman', serif;
 }
 
 h2 {
-  font-family: 'Courier New', monospace;
+    font-family: 'Courier New', monospace;
 }
 
 h3.naty{color: #37B8DB;
 
 }
 p {
-  color: gray;
+    color: gray;
 }
 
 .links {
-  color: blue;
+    color: blue;
 }
 
 p.otroslinks.links {
-  color: red;
+    color: red;
 }
 
 
 
 
 li {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 li {font-family: Arial; Helvetica;
@@ -38,27 +38,27 @@ li {font-family: Arial; Helvetica;
 
 
 li.impar {
-  color: #892C91;
+    color: #892C91;
 }
 
 li.par {
-  color: rgb(54, 117, 29);
+    color: rgb(54, 117, 29);
 }
 
 h3.color {
-  color:green;
+    color:green;
 }
 a.anna {
-  color:red;
+    color:red;
 }
 h1.titulo {
-  font-family: 'arial narrow', serif;
+    font-family: 'arial narrow', serif;
 }
 
 h3.color1 {
-  color: orange;
+    color: orange;
 }
 
 li.color2 {
-  color:red;
+    color:red;
 }
