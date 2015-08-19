@@ -45,6 +45,20 @@ li.par {
   color: rgb(54, 117, 29);
 }
 
-h3.color {color:green;}
-a.anna {color:red;}
+h3.color {
+  color:green;
+}
+a.anna {
+  color:red;
+}
+h1.titulo {
+  font-family: 'arial narrow', serif;
+}
 
+h3.color1 {
+  color: orange;
+}
+
+li.color2 {
+  color:red;
+}
