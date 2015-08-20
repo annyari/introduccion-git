@@ -37,33 +37,39 @@
             </li>
             <li  class="color2">
                 <strong>Flujo de trabajo</strong>
-                <p>El repositorio local esta compuesto por tres "árboles" administrados por git. El primero es el directorio de trabajo que contiene los archivos, el segundo es el Index que actua como una zona intermedia, y el último es el HEAD que apunta al último commit realizado.
+                <p>
+                    El repositorio local esta compuesto por tres "árboles" administrados por git. El primero es el directorio de trabajo que contiene los archivos, el segundo es el Index que actua como una zona intermedia, y el último es el HEAD que apunta al último commit realizado.
                 </p>
             </li>
             <li  class="color2">
                 <strong>Add & commit</strong> 
-                <p>El primer paso en el flujo de trabajo básico es registrar cambios (añadirlos al Index) usando (git add). Y hacer commit a estos cambios. En ese momento el archivo esta incluído en el HEAD, pero aún no en tu repositorio remoto.
+                <p>
+                    El primer paso en el flujo de trabajo básico es registrar cambios (añadirlos al Index) usando (git add). Y hacer commit a estos cambios. En ese momento el archivo esta incluído en el HEAD, pero aún no en tu repositorio remoto.
                 </p> 
             </li>
             <li  class="color2">
                 <strong>Envío de cambios</strong>
-                <p>Para enviar estos cambios al repositorio remoto se debe ejecutar (git push origin master) Reemplazar master por la rama a la que  se quiere enviar los cambios. Ahora se puede subir los cambios al repositorio remoto seleccionado.
+                <p>
+                    Para enviar estos cambios al repositorio remoto se debe ejecutar (git push origin master) Reemplazar master por la rama a la que  se quiere enviar los cambios. Ahora se puede subir los cambios al repositorio remoto seleccionado.
                 </p>
             </li>
             <li  class="color2">
                 <strong>Ramas</strong> 
-                <p>Las ramas son utilizadas para desarrollar funcionalidades aisladas unas de otras. La rama master es la rama "por defecto" cuando se crea un repositorio, Una rama nueva no estará disponible para los demás a menos que se suba (push) la rama al repositorio remoto.
+                <p>
+                    Las ramas son utilizadas para desarrollar funcionalidades aisladas unas de otras. La rama master es la rama "por defecto" cuando se crea un repositorio, Una rama nueva no estará disponible para los demás a menos que se suba (push) la rama al repositorio remoto.
                 </p>
             </li>
             <li  class="color2">
                 <strong>Actualizar y fusionar</strong> 
-                <p>Para actualizar el repositorio local al commit más nuevo, se debe ejecutar (pull), git intentará fusionar automáticamente los cambios. Desafortunadamente, no siempre será posible y se podrán producir conflictos. estos errores se deben resolver y fusionar esos conflictos manualmente. 
+                <p>
+                    Para actualizar el repositorio local al commit más nuevo, se debe ejecutar (pull), git intentará fusionar automáticamente los cambios. Desafortunadamente, no siempre será posible y se podrán producir conflictos. estos errores se deben resolver y fusionar esos conflictos manualmente. 
                 </p> 
             </li>
             <li  class="color2">
                 <strong> Cambios locales </strong> 
-                <p> Se puede reemplazar cambios locales usando el comando (git checkout). Este comando reemplaza los cambios en el directorio de trabajo con el último contenido de HEAD. Los cambios que ya han sido agregados al Index, así como también los nuevos archivos, se mantendrán sin cambio. Se puede deshacer todos los cambios locales y commits, trayendo la última versión del servidor y apuntando a la copia local principal.
-                 </p> 
+                <p>
+                    Se puede reemplazar cambios locales usando el comando (git checkout). Este comando reemplaza los cambios en el directorio de trabajo con el último contenido de HEAD. Los cambios que ya han sido agregados al Index, así como también los nuevos archivos, se mantendrán sin cambio. Se puede deshacer todos los cambios locales y commits, trayendo la última versión del servidor y apuntando a la copia local principal.
+                </p> 
             </li>
         
         </ul>

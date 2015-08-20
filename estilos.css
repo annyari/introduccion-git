@@ -3,39 +3,49 @@ body {
     font-size: 14px;
 }
 
+/* Titulos */
 h1 {
     font-family: Georgia, 'Times New Roman', serif;
+}
+
+h1.titulo {
+    font-family: 'arial narrow', serif;
 }
 
 h2 {
     font-family: 'Courier New', monospace;
 }
 
-h3.naty{color: #37B8DB;
-
+h3.color {
+    color:green;
 }
+
+h3.color1 {
+    color: orange;
+}
+
+h3.naty {
+    color: #37B8DB;
+}
+
+/* Parrafos */
 p {
     color: gray;
-}
-
-.links {
-    color: blue;
 }
 
 p.otroslinks.links {
     color: red;
 }
 
-
-
-
+/* Listados */
 li {
     font-size: 14px;
+    font-family: Arial, Helvetica;
 }
 
-li {font-family: Arial; Helvetica;
+li.color2 {
+    color:red;
 }
-
 
 li.impar {
     color: #892C91;
@@ -45,20 +55,46 @@ li.par {
     color: rgb(54, 117, 29);
 }
 
-h3.color {
-    color:green;
-}
+/* Anclas */
 a.anna {
     color:red;
 }
-h1.titulo {
-    font-family: 'arial narrow', serif;
+
+/* Clases Genéricas */
+.links {
+    color: blue;
 }
 
-h3.color1 {
-    color: orange;
+/* Cabecera */
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+}
+.logo-image {
+    display: inline-block;
+}
+.logo-title {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 5px;
 }
 
-li.color2 {
-    color:red;
+/* Navegación */
+.navegacion {
+    display: inline-block;
 }
+.navegacion-nivel1 {
+    list-style-type: none;
+}
+.navegacion-nivel1 li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.navegacion-nivel2 {
+    display: none;
+}
+
