@@ -24,7 +24,7 @@ h3.color1 {
     color: orange;
 }
 
-h3.naty {
+h3.titulos {
     color: #37B8DB;
 }
 
@@ -36,8 +36,14 @@ p {
 p.otroslinks.links {
     color: red;
 }
+p.texto {
+    color: darkblue;
+}
 
 /* Listados */
+ol.texto{
+    color: darkblue;
+}
 li {
     font-size: 14px;
     font-family: Arial, Helvetica;
