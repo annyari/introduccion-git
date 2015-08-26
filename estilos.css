@@ -156,4 +156,39 @@ nav.anna2 ul.navegacion-nivel2 {
     display: none;
 }
 
+/*estilos modelo de caja*/
+
+h1.tittle1 {
+    font-size: 30px;
+    font-family: 'Courier New', monospace;
+    color:red;
+}
+
+h3.model1 {
+    font-size: 20px;
+    font-family: 'Courier New', monospace;
+    color:#E89B9B;
+}
+
+h5.model2{
+    font-size: 20px;
+    font-family: 'Courier New', monospace;
+    color:#E89B9B;
+}
+
+p.parrafo {
+    font-size: 14px;
+    font-family: Arial, Helvetica;
+    color:brown;
+}
+
+ul.listas {
+    font-size: 14px;
+    font-family: Arial, Helvetica;
+    color:brown;
+}
+li.colorlist {
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+}
 
