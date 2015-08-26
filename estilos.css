@@ -107,7 +107,7 @@ a.anna {
 */
 
 
-/*este es mi diseño :) ANNA */
+/*este es mi diseño :) ANNA git */
 
 nav.anna{
     background: #E4F3EC;
@@ -131,5 +131,29 @@ nav.anna ul.navegacion-nivel2 {
     display: none;
 }
 
+/*este es mi diseño :) ANNA2 html semántico */
+
+nav.anna2{
+    background: #E9EAF1;
+}
+
+nav.anna2 ul.navegacion-nivel1 {    
+    margin: 10px 0px;
+    display: block;
+}
+
+nav.anna2 ul.navegacion-nivel1 > li {
+    display: block;
+}
+
+nav.anna2 ul.navegacion-nivel1 > li > a { 
+    padding: 10px;
+    font-size: 15px;
+    display: block;
+}
+
+nav.anna2 ul.navegacion-nivel2 {
+    display: none;
+}
 
 
