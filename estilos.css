@@ -53,6 +53,7 @@ li.color2 {
     color:red;
 }
 
+
 li.impar {
     color: #892C91;
 }
@@ -104,3 +105,31 @@ a.anna {
     display: none;
 }
 */
+
+
+/*este es mi diseño :) ANNA */
+
+nav.anna{
+    background: #E4F3EC;
+}
+
+nav.anna ul.navegacion-nivel1 {    
+    display: inline-block;
+    margin: 30px;
+}
+
+nav.anna ul.navegacion-nivel1 > li {
+    display:inline-block;
+}
+
+nav.anna ul.navegacion-nivel1 > li > a { 
+    padding: 30px;
+    font-size: 20px
+}
+
+nav.anna ul.navegacion-nivel2 {
+    display: none;
+}
+
+
+
