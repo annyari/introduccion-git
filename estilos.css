@@ -111,6 +111,7 @@ a.anna {
 
 nav.anna{
     background: #E4F3EC;
+    position: relative;
 }
 
 nav.anna ul.navegacion-nivel1 {    
@@ -124,16 +125,19 @@ nav.anna ul.navegacion-nivel1 > li {
 
 nav.anna ul.navegacion-nivel1 > li > a { 
     padding: 30px;
-    font-size: 20px
+    font-size: 20px;
 }
 
 nav.anna ul.navegacion-nivel2 {
-    display: none;
+    display: block;
+    position: absolute;
+    background: #CAF1DE;
+    bottom: -30px;
 }
 
 /*este es mi diseño :) ANNA2 html semántico */
 
-nav.anna2{
+/*nav.anna2{
     background: #E9EAF1;
 }
 
@@ -154,7 +158,7 @@ nav.anna2 ul.navegacion-nivel1 > li > a {
 
 nav.anna2 ul.navegacion-nivel2 {
     display: none;
-}
+}*/
 
 /*estilos modelo de caja*/
 
@@ -192,3 +196,45 @@ li.colorlist {
     font-family: 'Courier New', monospace;
 }
 
+/*El Contenedor*/
+div.contenedor{
+    position: relative;
+    background-color: #CCC;
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+/* La Cajita */
+div.caja {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: red;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+div.caja2 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    background: green;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+div.caja3 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: purple;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
