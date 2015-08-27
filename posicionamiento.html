@@ -1,0 +1,141 @@
+<html>
+<head>
+        <title>Posicionamiento CSS</title> 
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+    </head>
+
+    <body>
+        <header>
+            <a>
+                <img src ="https://boluda.com/files/intoduccion-css.png" width="400" height="200">
+            </a> 
+              <h1> Posicionamiento CSS </h1>
+        </header>
+
+        <nav class="navegacion anna">
+            <ul class="navegacion-nivel1">
+                <li><a href="index.html">INICIO</a></li>
+                <li>
+                    <a href="">GIT</a>
+                    <ul class="navegacion-nivel2"> 
+                        <li class="par"><a href="git.html">Git (Anna)</a></li>
+                        <li class="impar"><a href="resolucion-conflictos.html">Resolución de conflictos (Naty)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">HTML</a>
+                    <ul class="navegacion-nivel2">
+                        <li class="par"><a href="html-semantico.html">HTML Semántico (Anna)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">CSS</a>
+                    <ul class="navegacion-nivel2">
+                        <li class="impar"><a href="css.html">CSS (Naty)</a></li>
+                        <li class="impar"><a href="modelo-caja.html">Modelo de Caja</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main> 
+            <p> 
+                Los navegadores crean y posicionan de forma automática todas las cajas que forman cada página HTML. No obstante, CSS permite al diseñador modificar la posición en la que se muestra cada caja.
+
+                Utilizando las propiedades que proporciona CSS para alterar la posición de las cajas es posible realizar efectos muy avanzados y diseñar estructuras de páginas que de otra forma no serían posibles.
+            </p>
+
+            <p> El estándar de CSS define cinco modelos diferentes para posicionar una caja: </p>
+
+            <ul>
+                <li>
+                    <strong>Posicionamiento normal o estático:</strong>
+                    <p> 
+                        Se trata del posicionamiento que utilizan los navegadores si no se indica lo contrario.
+                    </p>
+                </li>
+
+                <li> 
+                    <strong>Posicionamiento relativo:</strong>
+                    <p>
+                        Variante del posicionamiento normal que consiste en posicionar una caja según el posicionamiento normal y después desplazarla respecto de su posición original.
+                    </p>
+                </li>
+
+                <li> 
+                    <strong>Posicionamiento absoluto:</strong> 
+                    <p>
+                        La posición de una caja se establece de forma absoluta respecto de su elemento contenedor y el resto de elementos de la página ignoran la nueva posición del elemento.
+                    </p>
+                </li>
+
+                <li> 
+                    <strong> Posicionamiento fijo:</strong>
+                    <p>
+                        variante del posicionamiento absoluto que convierte una caja en un elemento inamovible, de forma que su posición en la pantalla siempre es la misma independientemente del resto de elementos e independientemente de si el usuario sube o baja la página en la ventana del navegador.
+                    </p>
+                </li>
+
+                <li>
+                    <strong>Posicionamiento flotante:</strong> 
+                    <p>
+                        se trata del modelo más especial de posicionamiento, ya que desplaza las cajas todo lo posible hacia la izquierda o hacia la derecha de la línea en la que se encuentran.
+                    </p>
+                </li>
+            </ul>
+            
+            <p> 
+                El posicionamiento de una caja se establece mediante la propiedad position. El significado de cada uno de los posibles valores de la propiedad <strong> position </strong> es el siguiente:
+            </p>
+
+            <ul> 
+                <li> 
+                    <strong>STATIC:</strong> 
+                    <p> 
+                        corresponde al posicionamiento normal o estático. Si se utiliza este valor, se ignoran los valores de las propiedades top, right, bottom y left que se verán a continuación.
+                    </p>
+                </li>
+
+                <li>
+                    <strong>RELATIVE:</strong>
+                    <p>     
+                         corresponde al posicionamiento relativo. El desplazamiento de la caja se controla con las propiedades top, right, bottom y left.
+                    </p>
+                </li>
+                
+                <li> 
+                    <strong>ABSOLUTE:</strong>
+                    <p>
+                         corresponde al posicionamiento absoluto. El desplazamiento de la caja también se controla con las propiedades top, right, bottom y left, pero su interpretación es mucho más compleja, ya que el origen de coordenadas del desplazamiento depende del posicionamiento de su elemento contenedor.
+                    </p>
+                </li>
+
+                <li>
+                <strong>FIXED:</strong>
+                <p> 
+                    corresponde al posicionamiento fijo. El desplazamiento se establece de la misma forma que en el posicionamiento absoluto, pero en este caso el elemento permanece inamovible en la pantalla.
+                </p>
+                </li>
+            </ul>
+
+            <p> 
+                Normalmente, cuando se posiciona una caja también es necesario desplazarla respecto de su posición original o respecto de otro origen de coordenadas. CSS define cuatro propiedades llamadas top, right, bottom y left para controlar el desplazamiento de las cajas posicionadas
+            </p>
+
+            <p> 
+                En el caso del posicionamiento relativo, cada una de estas propiedades indica el desplazamiento del elemento desde la posición original de su borde superior/derecho/inferior/izquierdo. Si el posicionamiento es absoluto, las propiedades indican el desplazamiento del elemento respecto del borde superior/derecho/inferior/izquierdo de su primer elemento padre posicionado.
+            </p>
+
+            <p> 
+                En cualquiera de los dos casos, si el desplazamiento se indica en forma de porcentaje, se refiere al porcentaje sobre la anchura (propiedades right y left) o altura (propiedades top y bottom) del elemento.
+            </p>
+            
+         </main>
+
+         <footer>
+            <p>
+                <strong> Enlace ampliacion del tema :) </strong> <a href="https://librosweb.es/libro/css/capitulo_5/posicionamiento.html"> Posicionamiento css </a> 
+            </p>
+        </footer>
+    </body>
+</html>
