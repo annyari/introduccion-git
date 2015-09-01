@@ -238,6 +238,56 @@ div.caja3 {
     height: 50px;
     display: block;
 }
+/* CAJITAS ANNA */
+
+div.cajacontenedora1{
+    position: relative;
+    background-color:#D3D6DE;
+    width: 400px;
+    height: 400px;
+    display: block;
+}
+
+/* La Cajita */
+
+div.cajita1{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    background: #EB173B;
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+div.cajita2 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background: #EBDD17;
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+div.cajita3 {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    background:#0966E0;
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+
+
+
+
+
 
 main { 
     padding-top: 30px;
