@@ -238,17 +238,18 @@ div.caja3 {
     height: 50px;
     display: block;
 }
-/* CAJITAS ANNA */
+/* CAJITA 1 ANNA */
 
 div.cajacontenedora1{
     position: relative;
     background-color:#D3D6DE;
+    border: 40px solid white;
     width: 400px;
     height: 400px;
     display: block;
 }
 
-/* La Cajita */
+/* La Cajita 1 anna */
 
 div.cajita1{
     position: absolute;
@@ -284,11 +285,66 @@ div.cajita3 {
 }
 
 
+/* CAJITA 2 ANNA */
 
-
-
-
-
-main { 
-    padding-top: 30px;
+div.cajacontenedora2{
+    position: relative;
+    background-color:#C7EEF2;
+    border: 40px solid white;
+    width: 400px;
+    height: 400px;
+    display: block;
 }
+
+/* La Cajita 2 anna */
+
+div.cajita-1{
+    position: absolute;
+    top: 90px;
+    left: 200px;
+    background: #58B840 ;
+    border: 10px solid white;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+div.cajita-2 {
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    background: #E8392C;
+    border: 10px solid white;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+div.cajita-3 {
+    position: absolute;
+    top: 200px;
+    left: 90px;
+    background: #10ACE0;
+    border: 10px solid white;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+div.cajita-4 {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    background: #F7DB23;
+    border: 10px solid white;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+
+
+
+
+
+
