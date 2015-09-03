@@ -44,6 +44,7 @@ p.texto {
 ol.texto{
     color: darkblue;
 }
+
 li {
     font-size: 14px;
     font-family: Arial, Helvetica;
@@ -89,29 +90,18 @@ a.anna {
     margin-left: 5px;
 }
 
-/* Navegación */
-/*.navegacion {
-    display: inline-block;
-}
-.navegacion-nivel1 {
-    list-style-type: none;
-}
-.navegacion-nivel1 li {
-    display: inline-block;
-    padding: 10px;
-}
-
-.navegacion-nivel2 {
-    display: none;
-}
-*/
-
-
 /*este es mi diseño :) ANNA git */
 
 nav.anna{
     background: #E4F3EC;
     position: relative;
+    font-size: 10px;
+}
+
+nav.anna ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 nav.anna ul.navegacion-nivel1 {    
@@ -123,16 +113,37 @@ nav.anna ul.navegacion-nivel1 > li {
     display:inline-block;
 }
 
+nav.anna ul.navegacion-nivel1 > li:first-child > a {
+    color: red;
+}
+
+nav.anna ul.navegacion-nivel1 > li > ul.navegacion-nivel2 {
+    display: none;
+}
+
+nav.anna ul.navegacion-nivel1 > li:hover > ul.navegacion-nivel2 {
+    display: block;
+    position: absolute;
+    background: #CAF1DE;
+    top: 82px;
+}
+
 nav.anna ul.navegacion-nivel1 > li > a { 
     padding: 30px;
     font-size: 20px;
 }
 
-nav.anna ul.navegacion-nivel2 {
+nav.anna ul.navegacion-nivel2 > li > a {
+    padding: 1em;
     display: block;
-    position: absolute;
-    background: #CAF1DE;
-    bottom: -30px;
+}
+
+nav.anna ul.navegacion-nivel2 > li.impar {
+    background-color: #B1DEC9;
+}
+
+main > ol > li:nth-child(2) {
+    color: red;
 }
 
 /*este es mi diseño :) ANNA2 html semántico */
@@ -234,6 +245,7 @@ div.caja3 {
     left: 50px;
     background: purple;
     border: 1px solid black;
+    border-radius: 5px;
     width: 50px;
     height: 50px;
     display: block;
@@ -287,7 +299,7 @@ div.cajita3 {
 
 /* CAJITA 2 ANNA */
 
-div.cajacontenedora2{
+div.cajacontenedora2 {
     position: relative;
     background-color:#C7EEF2;
     border: 40px solid white;
@@ -301,8 +313,8 @@ div.cajacontenedora2{
 div.cajita-1{
     position: absolute;
     top: 90px;
-    left: 200px;
-    background: #58B840 ;
+    left: 90px;
+    background: #E8392C;
     border: 10px solid white;
     width: 100px;
     height: 100px;
@@ -312,8 +324,8 @@ div.cajita-1{
 div.cajita-2 {
     position: absolute;
     top: 90px;
-    left: 90px;
-    background: #E8392C;
+    left: 200px;
+    background: #58B840 ;
     border: 10px solid white;
     width: 100px;
     height: 100px;
@@ -341,8 +353,6 @@ div.cajita-4 {
     height: 100px;
     display: block;
 }
-
-
 
 
 
