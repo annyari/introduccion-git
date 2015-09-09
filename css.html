@@ -7,99 +7,129 @@
     </head>
     <body>
 
-<!-- Aquí empieza la cabezera -->
-    <header>
-    <nav class="navegacion anna">
+<!-- Aquí empieza la cabecera -->
+        <header class="logo">
+            <img src="https://avatars2.githubusercontent.com/u/13126795?v=3&s=200" width="50" height="50" class="logo-image"> 
+            <h2 class="logo-title">Madriguera School</h2>
+        </header>
+        <!-- Aquí termina la cabecera -->
+
+         <!-- Aquí empieza la navegación -->
+        <nav class="navegacion anna">
             <ul class="navegacion-nivel1">
-                <li><a href="index.html">INICIO</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li>
-                    <a>GIT</a>
-                    <ul class="navegacion-nivel2"> 
-                        <li class="par"><a href="git.html">Git (Anna)</a></li>
-                        <li class="impar"><a href="resolucion-conflictos.html">Resolución de conflictos (Naty)</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a>HTML</a>
+                    <a href="">Git</a>
                     <ul class="navegacion-nivel2">
-                        <li class="par"><a href="html-semantico.html">HTML Semántico (Anna)</a></li>
+                        <li class="impar"><a href="git.html">Git (Anna)</a></li>
+                        <li class="par"><a href="resolucion-conflictos.html">Resolución de conflictos (Naty)</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a>CSS</a>
+                    <a href="">HTML</a>
+                    <ul class="navegacion-nivel2">
+                        <li class="impar"><a href="html-semantico.html">HTML Semántico (Anna)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">CSS</a>
                     <ul class="navegacion-nivel2">
                         <li class="impar"><a href="css.html">CSS (Naty)</a></li>
-                        <li class="impar"><a href="modelo-caja.html">Modelo de Caja</a></li>
+                        <li class="par"><a href="modelo-caja.html">Modelo de Caja</a></li>
+                        <li class="impar"><a href="posicionamiento.html">Posicionamiento</a></li>
+                        <li class="par"><a href="pseudo-selectores.html">Pseudo-selectores</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
-        <img src="http://www.designzzz.com/wp-content/uploads/2011/05/CSS.jpg" width="60"  height="60">
-        <h2 class="logo-title">
-        Cascading Style Sheets
-        </h2>
-    </header>
-<!-- Aquí termina la cabecera -->
+        <!-- Aquí termina la navegación -->
 
 <!-- Aquí empieza el contenido principal -->
     <main>
-        <h3 class="titulos">Qué es CSS?</h3>
+        <h3 class="color1"> <strong> Qué es CSS? </strong> </h3>
         <p>
             CSS (Cascading Style Sheets, u Hojas de Estilo en Cascada es una tecnología que se desarrolló con el objetivo de separar la presentación de la estructura.
         </p>
         <p>Es un lenguaje usado para definir y crear la presentación de un documento estructurado escrito en HTML.</p>
         <p> El World Wide Web Consortium (W3C) es el encargado de formular la especificación de las hojas de estilo que servirán de estándar para los agentes de usuario o navegadores.</p>
-        <h3 class="titulos">Uso de CSS</h3>
-        <ol>
+        <h3 class="color1"> <strong> Uso de CSS </strong> </h3>
+        <ul>
             <li>
+            <p>
                 Se utiliza para proporcionar informació sobre el estilo, color, fuente, alineación del texto, tamaño y otras caractrísticas no visuales.
+            </p>
             </li>
+
             <li>
+            <p>
                 Se ha permitido a través del uso de CSS la eliminación del uso de las tablas para el diseño, siendo estas utilizadas solamente para la muestra de datos tabulados.
+            </p>
             </li>
-        </ol>
-        <h3 class="titulos">Formas de uso de CSS</h3>
-        <ol>
+
+        </ul>
+        <h3 class="color1"> <strong> Formas de uso de CSS </strong> </h3>
+        <ul>
             <li>
+            <p>
                 Mediante un CSS introducido por el autor de HTML, por medio de un estilo en linea, una hoja de estilo interna o una hoja de estilo externa.
+            </p>
+
             </li>
+
             <li>
+            <p>
                 Estilos CSS introducidos por las personas que ven el documento de tal manera que se sobreescriben los estilos definidos por el autor.
+            </p>
             </li>
+
             <li>
-                Los estilos marcados "por defecto" por los <a href="https://es.wikipedia.org/wiki/Agente_de_usuario">user agent</a> para diferentes elementos de un documento HTML, como por ejemplo los enlaces.
+            <p>
+                Los estilos marcados "por defecto" por los <a class="anna" href="https://es.wikipedia.org/wiki/Agente_de_usuario">user agent</a> para diferentes elementos de un documento HTML, como por ejemplo los enlaces.
+            </p>
             </li>
-        </ol>
-        <h3 class="titulos">Ventajas de CSS?</h3>
-        <p>Algunas ventajas de utilizar CSS (u otro lenguaje de estilo) son:</p>
-        <ol>
+
+        </ul>
+        <h3 class="color1"> <strong> Ventajas de CSS? </strong> </h3>
+        
+        <p> Algunas ventajas de utilizar CSS (u otro lenguaje de estilo) son:</p>
+        <ul>
+
             <li>
-                Control centralizado de la presentación de un sitio web completo con lo que se agiliza de forma considerable la actualización del mismo.
+                <p>
+                    Control centralizado de la presentación de un sitio web completo con lo que se agiliza de forma considerable la actualización del mismo.
+                </p>
             </li>
+
             <li>
-                Optimización del ancho de banda de la conexión, pues pueden definirse los mismos estilos para muchos elementos con un sólo selector; o porque un mismo archivo CSS puede servir para una multitud de documentos.
+                <p>
+                    Optimización del ancho de banda de la conexión, pues pueden definirse los mismos estilos para muchos elementos con un sólo selector; o porque un mismo archivo CSS puede servir para una multitud de documentos.
+                </p>
             </li>
+
             <li>
-                Mejora en la accesibilidad del documento, pues con el uso del CSS se evitan antiguas prácticas necesarias para el control del diseño (como las tablas), y que iban en perjuicio de ciertos usos de los documentos, por parte de navegadores orientados a personas con algunas limitaciones sensoriales.
+                <p> 
+                    Mejora en la accesibilidad del documento, pues con el uso del CSS se evitan antiguas prácticas necesarias para el control del diseño (como las tablas), y que iban en perjuicio de ciertos usos de los documentos, por parte de navegadores orientados a personas con algunas limitaciones sensoriales.
+                </p>
             </li>
-        </ol>
+        </ul>
+        
         </main>
 <!-- Aquí termina el contenido principal -->
 
 <!-- Aquí empieza el pie -->
     <footer>
-        <h5>Links de interes</h5>
+           <h3 class="color1"> <strong> Links de interes </strong> </h3>
             <ul>
                 <li>
-                    <a href="http://www.maestrosdelweb.com/introcss/">Qué es CSS</a>
+                    <a class="anna" href="http://www.maestrosdelweb.com/introcss/">Qué es CSS</a>
                 </li>
-        <br>
+    
                 <li>
-                    <a href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada">Hoja de estilos en cascada</a>
+                    <a class="anna" href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada">Hoja de estilos en cascada</a>
                 </li>
-                <br>
+
                 <li>
-                    <a href="http://es.html.net/tutorials/css/">Tutorial CSS-Tabla de contenidos</a>
+                    <a class="anna" href="http://es.html.net/tutorials/css/">Tutorial CSS-Tabla de contenidos</a>
                 </li>
             </ul>
         </footer>

@@ -5,82 +5,97 @@
         <link rel="stylesheet" type="text/css" href="estilos.css">
 
     </head>
-
     <body>
-        <header>
 
-            <img src="http://desarrolloweblibre.com/wp-content/uploads/2015/01/css_cascading_style_sheet.jpg "width="200"  height="150">
-          
-          <H1 class=tittle1> MODELO DE CAJA</H1>
-
+        
+     <!-- Aquí empieza la cabecera -->
+        <header class="logo">
+            <img src="https://avatars2.githubusercontent.com/u/13126795?v=3&s=200" width="50" height="50" class="logo-image"> 
+            <h2 class="logo-title">Madriguera School</h2>
         </header>
+        <!-- Aquí termina la cabecera -->
+
+         <!-- Aquí empieza la navegación -->
         <nav class="navegacion anna">
             <ul class="navegacion-nivel1">
-                <li><a href="index.html">INICIO</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li>
-                    <a>GIT</a>
-                    <ul class="navegacion-nivel2"> 
-                        <li class="par"><a href="git.html">Git (Anna)</a></li>
-                        <li class="impar"><a href="resolucion-conflictos.html">Resolución de conflictos (Naty)</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a>HTML</a>
+                    <a href="">Git</a>
                     <ul class="navegacion-nivel2">
-                        <li class="par"><a href="html-semantico.html">HTML Semántico (Anna)</a></li>
+                        <li class="impar"><a href="git.html">Git (Anna)</a></li>
+                        <li class="par"><a href="resolucion-conflictos.html">Resolución de conflictos (Naty)</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a>CSS</a>
+                    <a href="">HTML</a>
+                    <ul class="navegacion-nivel2">
+                        <li class="impar"><a href="html-semantico.html">HTML Semántico (Anna)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">CSS</a>
                     <ul class="navegacion-nivel2">
                         <li class="impar"><a href="css.html">CSS (Naty)</a></li>
-                        <li class="impar"><a href="modelo-caja.html">Modelo de Caja</a></li>
+                        <li class="par"><a href="modelo-caja.html">Modelo de Caja</a></li>
+                        <li class="impar"><a href="posicionamiento.html">Posicionamiento</a></li>
+                        <li class="par"><a href="pseudo-selectores.html">Pseudo-selectores</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
-        <main>
-            <h3 class=model1> ¿Qué es el modelo de caja?</h3>
+        <!-- Aquí termina la navegación -->
 
-            <p class=parrafo>
+        <main>
+            <h3 class= "color1"> <strong> ¿Qué es el modelo de caja? <strong> </h3>
+
+            <p>
                 El modelo de cajas o "box model" es la característica más importante del lenguaje de estilos CSS, pues que condiciona el diseño de todas las páginas web. El modelo de cajas es el comportamiento de CSS que hace que todos los elementos de las páginas se representen mediante cajas rectangulares.
             </p>
 
             <img src="http://es.html.net/tutorials/css/figure008.es.gif" width="400" height="300">
 
-            <h3 class=model1> Partes que conforman los modelos de caja:</h3>
+            <h3 class= "color1"<strong> Partes que conforman los modelos de caja: </strong></h3>
 
-            <ul class=listas>
-                <li>Contenido (content): se trata del contenido HTML del elemento (las palabras de un párrafo, una imagen, el texto de una lista de elementos, etc.)
-                widthrepresenta el ancho de la caja. Pero es el ancho interior, es decir, si bordes, márgenes, ni padding. Podemos indicar este ancho en medidas absolutas (normalmente píxeles) o relativas (normalmente %).
-                </li>
+            <ul>
+                <li class="color2">Contenido (content): </li>
 
-                <li>
-                    Relleno (padding): espacio libre opcional existente entre el contenido y el borde.
+                 <p> 
+                    Se trata del contenido HTML del elemento (las palabras de un párrafo, una imagen, el texto de una lista de elementos, etc.)
+                    widthrepresenta el ancho de la caja. Pero es el ancho interior, es decir, si bordes, márgenes, ni padding. Podemos indicar este ancho en medidas absolutas (normalmente píxeles) o relativas (normalmente %).
+                 </p>
+
+                <li class="color2"> Relleno (padding): </li>
+                 <p> 
+                    Espacio libre opcional existente entre el contenido y el borde.
                     Con padding establecemos la distancia de relleno entre el límite interior de la caja y el exterior (borde).
-                </li>
+                 </p>
+                
 
-                <li>
-                    Borde (border): línea que encierra completamente el contenido y su relleno. Como habrás supuesto,width especifica el grosor del borde. Normalmente es una medida en píxeles, pero también podemos utilizar las palabras hin (fino), medium (normal) y thick (grueso). Por supuesto, cómo de gordo es thick queda a interpretación del navegador.
-                </li>
+                <li class="color2"> Borde (border): </li> 
+                 <p>     
+                    Línea que encierra completamente el contenido y su relleno. Como habrás supuesto,width especifica el grosor del borde. Normalmente es una medida en píxeles, pero también podemos utilizar las palabras hin (fino), medium (normal) y thick (grueso). Por supuesto, cómo de gordo es thick queda a interpretación del navegador.
+                 </p>
+                
 
-                <li>
-                    Margen (margin): separación opcional existente entre la caja y el resto de cajas adyacentes. En cuanto a la forma de usarla, es igual que con la propiedad padding, así que la forma de escribir y los atajos es exactamente la misma.
+                <li class="color2"> Margen (margin): </li>
+                 <p> 
+                    Separación opcional existente entre la caja y el resto de cajas adyacentes. En cuanto a la forma de usarla, es igual que con la propiedad padding, así que la forma de escribir y los atajos es exactamente la misma.
+                 </p>
+
                 </li>
             </ul>
         </main>
 
         <footer>
-            <h5 class=model2> Links de interes</h5>
+            <h3 class="color1"> <strong> Links de interes </strong> </h3>
                 <ul>
-                    <li class=colorlist> 
-                        <a href=
+                    <li> 
+                        <a class="anna" href=
                         "https://librosweb.es/libro/css/capitulo_4.html"> Modelo de Cajas
                         </a>
                     </li>
-                    
-                    <li class=colorlist> 
-                        <a href=
+                    <li>
+                        <a class="anna" href=
                         "http://www.cristalab.com/curso-html/modelo-caja/">Modelo de caja - Curso HTML y CSS
                         </a>
                     </li>

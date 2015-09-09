@@ -4,43 +4,43 @@
         <link rel="stylesheet" type="text/css" href="estilos.css">
     </head>
 
-
-
     <body>
-        <header>
-            <a>
-                <img src ="http://git-scm.com/images/logo@2x.png">
-            </a> 
-
-            <h1 class="titulo"> Introducción a Git</h1>
-            
+        <!-- Aquí empieza la cabecera -->
+        <header class="logo">
+            <img src="https://avatars2.githubusercontent.com/u/13126795?v=3&s=200" width="50" height="50" class="logo-image"> 
+            <h2 class="logo-title">Madriguera School</h2>
         </header>
+        <!-- Aquí termina la cabecera -->
 
+         <!-- Aquí empieza la navegación -->
         <nav class="navegacion anna">
             <ul class="navegacion-nivel1">
-                <li><a href="index.html">INICIO</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li>
-                    <a href="">GIT</a>
-                    <ul class="navegacion-nivel2"> 
-                        <li class="par"><a href="git.html">Git (Anna)</a></li>
-                        <li class="impar"><a href="resolucion-conflictos.html">Resolución de conflictos (Naty)</a></li>
+                    <a href="">Git</a>
+                    <ul class="navegacion-nivel2">
+                        <li class="impar"><a href="git.html">Git (Anna)</a></li>
+                        <li class="par"><a href="resolucion-conflictos.html">Resolución de conflictos (Naty)</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="">HTML</a>
                     <ul class="navegacion-nivel2">
-                        <li class="par"><a href="html-semantico.html">HTML Semántico (Anna)</a></li>
+                        <li class="impar"><a href="html-semantico.html">HTML Semántico (Anna)</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="">CSS</a>
                     <ul class="navegacion-nivel2">
                         <li class="impar"><a href="css.html">CSS (Naty)</a></li>
-                        <li class="impar"><a href="modelo-caja.html">Modelo de Caja</a></li>
+                        <li class="par"><a href="modelo-caja.html">Modelo de Caja</a></li>
+                        <li class="impar"><a href="posicionamiento.html">Posicionamiento</a></li>
+                        <li class="par"><a href="pseudo-selectores.html">Pseudo-selectores</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
+        <!-- Aquí termina la navegación -->
 
             
         <main>
@@ -63,7 +63,7 @@
             
             <ul>
                 <li class="color2">
-                    <strong>Creacion de repositorio nuevo</strong><p>Se puede crear un nuevo repositorio o espacio de trabajo</p> 
+                    <strong>Creacion de repositorio nuevo</strong> <p>Se puede crear un nuevo repositorio o espacio de trabajo</p> 
                 </li>
                 <li class="color2">
                     <strong>Realizar checkout a un repositorio</strong> <p>realizacion de copias locales del reposiorio, o utilizando un servidor remoto.</p>
@@ -104,14 +104,18 @@
                         Se puede reemplazar cambios locales usando el comando (git checkout). Este comando reemplaza los cambios en el directorio de trabajo con el último contenido de HEAD. Los cambios que ya han sido agregados al Index, así como también los nuevos archivos, se mantendrán sin cambio. Se puede deshacer todos los cambios locales y commits, trayendo la última versión del servidor y apuntando a la copia local principal.
                     </p> 
                 </li>
-            
             </ul>
         </main>
 
         <footer>
-            <p>
-                <strong> Aquí les dejo el enlace de donde saque la información :)</strong> <a href="http://rogerdudler.github.io/git-guide/index.es.html"> GIT LA GUIA SENCILLA </a> 
-            </p>
+                 <h3 class="color1"> <strong> Links de interes </strong> </h3>
+                <ul> 
+                     <li>
+                         <a class="anna" href=
+                            "http://rogerdudler.github.io/git-guide/index.es.html"> Git la guia sencilla
+                         </a> 
+                     </li>
+                 </ul>
         </footer>
     </body>
 </html>

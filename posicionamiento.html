@@ -5,38 +5,43 @@
     </head>
 
     <body>
-        <header>
-            <a>
-                <img src ="https://boluda.com/files/intoduccion-css.png" width="400" height="200">
-            </a> 
-            <h1> Posicionamiento CSS </h1>
+        
+     <!-- Aquí empieza la cabecera -->
+        <header class="logo">
+            <img src="https://avatars2.githubusercontent.com/u/13126795?v=3&s=200" width="50" height="50" class="logo-image"> 
+            <h2 class="logo-title">Madriguera School</h2>
         </header>
+        <!-- Aquí termina la cabecera -->
 
+         <!-- Aquí empieza la navegación -->
         <nav class="navegacion anna">
             <ul class="navegacion-nivel1">
-                <li><a href="index.html">INICIO</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li>
-                    <a href="">GIT</a>
-                    <ul class="navegacion-nivel2"> 
-                        <li class="par"><a href="git.html">Git (Anna)</a></li>
-                        <li class="impar"><a href="resolucion-conflictos.html">Resolución de conflictos (Naty)</a></li>
+                    <a href="">Git</a>
+                    <ul class="navegacion-nivel2">
+                        <li class="impar"><a href="git.html">Git (Anna)</a></li>
+                        <li class="par"><a href="resolucion-conflictos.html">Resolución de conflictos (Naty)</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="">HTML</a>
                     <ul class="navegacion-nivel2">
-                        <li class="par"><a href="html-semantico.html">HTML Semántico (Anna)</a></li>
+                        <li class="impar"><a href="html-semantico.html">HTML Semántico (Anna)</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="">CSS</a>
                     <ul class="navegacion-nivel2">
                         <li class="impar"><a href="css.html">CSS (Naty)</a></li>
-                        <li class="impar"><a href="modelo-caja.html">Modelo de Caja</a></li>
+                        <li class="par"><a href="modelo-caja.html">Modelo de Caja</a></li>
+                        <li class="impar"><a href="posicionamiento.html">Posicionamiento</a></li>
+                        <li class="par"><a href="pseudo-selectores.html">Pseudo-selectores</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
+        <!-- Aquí termina la navegación -->
 
         <main> 
             <p> 
@@ -49,35 +54,35 @@
 
             <ul>
                 <li>
-                    <strong>Posicionamiento normal o estático:</strong>
+                   <h3 class="color1"> <strong>Posicionamiento normal o estático:</strong>    </h3>
                     <p> 
                         Se trata del posicionamiento que utilizan los navegadores si no se indica lo contrario.
                     </p>
                 </li>
 
                 <li> 
-                    <strong>Posicionamiento relativo:</strong>
+                    <h3 class="color1"> <strong>Posicionamiento relativo:</strong> </h3>
                     <p>
                         Variante del posicionamiento normal que consiste en posicionar una caja según el posicionamiento normal y después desplazarla respecto de su posición original.
                     </p>
                 </li>
 
                 <li> 
-                    <strong>Posicionamiento absoluto:</strong> 
+                    <h3 class="color1"> <strong> Posicionamiento absoluto:</strong> </h3>
                     <p>
                         La posición de una caja se establece de forma absoluta respecto de su elemento contenedor y el resto de elementos de la página ignoran la nueva posición del elemento.
                     </p>
                 </li>
 
                 <li> 
-                    <strong> Posicionamiento fijo:</strong>
+                   <h3 class="color1"> <strong> Posicionamiento fijo:</strong> </h3>
                     <p>
                         Variante del posicionamiento absoluto que convierte una caja en un elemento inamovible, de forma que su posición en la pantalla siempre es la misma independientemente del resto de elementos e independientemente de si el usuario sube o baja la página en la ventana del navegador.
                     </p>
                 </li>
 
                 <li>
-                    <strong>Posicionamiento flotante:</strong> 
+                    <h3 class="color1"> <strong>Posicionamiento flotante:</strong> </h3>
                     <p>
                         Se trata del modelo más especial de posicionamiento, ya que desplaza las cajas todo lo posible hacia la izquierda o hacia la derecha de la línea en la que se encuentran.
                     </p>
@@ -90,28 +95,28 @@
 
             <ul> 
                 <li> 
-                    <strong>STATIC:</strong> 
+                 <h3 class="color1"> <strong>STATIC:</strong> </h3>
                     <p> 
                         Corresponde al posicionamiento normal o estático. Si se utiliza este valor, se ignoran los valores de las propiedades top, right, bottom y left que se verán a continuación.
                     </p>
                 </li>
 
                 <li>
-                    <strong>RELATIVE:</strong>
+                    <h3 class="color1"> <strong>RELATIVE:</strong> </h3>
                     <p>     
                          Corresponde al posicionamiento relativo. El desplazamiento de la caja se controla con las propiedades top, right, bottom y left.
                     </p>
                 </li>
                 
                 <li> 
-                    <strong>ABSOLUTE:</strong>
+                <h3 class="color1"> <strong>ABSOLUTE:</strong> </h3>
                     <p>
                          Corresponde al posicionamiento absoluto. El desplazamiento de la caja también se controla con las propiedades top, right, bottom y left, pero su interpretación es mucho más compleja, ya que el origen de coordenadas del desplazamiento depende del posicionamiento de su elemento contenedor.
                     </p>
                 </li>
 
                 <li>
-                    <strong>FIXED:</strong>
+                      <h3 class="color1"> <strong>FIXED:</strong> </h3>
                     <p> 
                         corresponde al posicionamiento fijo. El desplazamiento se establece de la misma forma que en el posicionamiento absoluto, pero en este caso el elemento permanece inamovible en la pantalla.
                     </p>
@@ -133,10 +138,18 @@
          </main>
 
          <footer>
-            <p>
-                <strong> Enlace ampliacion del tema :) </strong> <a href="https://librosweb.es/libro/css/capitulo_5/posicionamiento.html"> Posicionamiento css </a> 
-            </p>
-            <p> <a href="cajas_anna.html"> CAJITAS ANNA :) </a> </p>
+            <h3 class="color1"> <strong> Links de interes </strong> </h3>
+            <ul> 
+                <li> 
+                    <a class="anna" href=
+                        "https://librosweb.es/libro/css/capitulo_5/posicionamiento.html"> Posicionamiento css 
+                    </a> 
+                </li>
+                <li> 
+                    <a class="anna" href=
+                        "cajas_anna.html"> Cajitas Anna 
+                    </a> 
+                </li>
         </footer>
     </body>
 </html>

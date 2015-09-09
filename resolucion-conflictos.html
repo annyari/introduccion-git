@@ -4,64 +4,107 @@
         <link rel="stylesheet" type="text/css" href="estilos.css">
     </head>
     <body>
-    <nav class="navegacion anna">
+    <!-- Aquí empieza la cabecera -->
+        <header class="logo">
+            <img src="https://avatars2.githubusercontent.com/u/13126795?v=3&s=200" width="50" height="50" class="logo-image"> 
+            <h2 class="logo-title">Madriguera School</h2>
+        </header>
+        <!-- Aquí termina la cabecera -->
+
+         <!-- Aquí empieza la navegación -->
+        <nav class="navegacion anna">
             <ul class="navegacion-nivel1">
-                <li><a href="index.html">INICIO</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li>
-                    <a>GIT</a>
-                    <ul class="navegacion-nivel2"> 
-                        <li class="par"><a href="git.html">Git (Anna)</a></li>
-                        <li class="impar"><a href="resolucion-conflictos.html">Resolución de conflictos (Naty)</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a>HTML</a>
+                    <a href="">Git</a>
                     <ul class="navegacion-nivel2">
-                        <li class="par"><a href="html-semantico.html">HTML Semántico (Anna)</a></li>
+                        <li class="impar"><a href="git.html">Git (Anna)</a></li>
+                        <li class="par"><a href="resolucion-conflictos.html">Resolución de conflictos (Naty)</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a>CSS</a>
+                    <a href="">HTML</a>
+                    <ul class="navegacion-nivel2">
+                        <li class="impar"><a href="html-semantico.html">HTML Semántico (Anna)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">CSS</a>
                     <ul class="navegacion-nivel2">
                         <li class="impar"><a href="css.html">CSS (Naty)</a></li>
-                        <li class="impar"><a href="modelo-caja.html">Modelo de Caja</a></li>
+                        <li class="par"><a href="modelo-caja.html">Modelo de Caja</a></li>
+                        <li class="impar"><a href="posicionamiento.html">Posicionamiento</a></li>
+                        <li class="par"><a href="pseudo-selectores.html">Pseudo-selectores</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
-    <img src="https://userscontent2.emaze.com/images/ae2d0754-6d85-492b-b497-615321aa1138/e0cd7508-8f88-4a35-aac7-7af4ebbd3ad9.jpg" width="60" height="70">
-        <h2 class="logo-title">RESOLUCIÓN DE CONFLICTOS GIT</h2>
+        <!-- Aquí termina la navegación -->
 
-        <p class="texto">Hola, esta es una versión de explicación de la resolución de conflictos en GIT</p>
+        <h3 class="color1"<strong>Cuándo se presentan los conflictos en Git?</strong></h3>
 
-        <h3 class="titulos">CUÁNDO SE PRESENTAN LOS CONFLICTOS EN GIT</h3>
+            <p> 
+                Normalmente los conflictos se presentan en git cuando uno o más desarrolladores realizan modificaciones sobre la misma línea en un repositorio.
+            </p>
 
-        <p class="texto">Normalmente los conflictos se presentan en git cuando uno o más desarrolladores realizan modificaciones sobre la misma línea en un repositorio.</p>
+        <h3 class="color1"<strong>Cómo se solucionan los conflictos en Git?</strong> </h3>
 
-        <h3 class="titulos">CÓMO SE SOLUCIONAN LOS CONFLICTOS EN GIT</h3>
-
-        <p class="texto">Para soliucionar los conflictos en git es importante que sigas al pie de la letra los pasos que te indico a continuación</p>
+            <p>
+                Para soliucionar los conflictos en git es importante que sigas al pie de la letra los pasos que te indico a continuación
+            </p>
         
-        <ol class="texto">
-            <li>Debes presionar el botón de "Pull" para descargar las modificaciones que hayan hecho los otros desarrolladores; de esta manera puedes identificar si existe o no algún tipo de conflicto.</li>
+        <ul>
+            <li class="color2"> <strong> Paso 1 </strong> </li>
+                <p> 
+                   Debes presionar el botón de "Pull" para descargar las modificaciones que hayan hecho los otros desarrolladores; de esta manera puedes identificar si existe o no algún tipo de conflicto.
+                </p>
             
-            <li>Si es positivo y encontraste un conflicto, asegurate que en tu ordenador se encuentre instalado el programa DiffMergue, lo puedes descargar en <a href="https://sourcegear.com/diffmerge/downloads.php">Descargar DiffMergue.</a></li>
+            
+            <li class="color2"> <strong>Paso 2</strong> </li>
+                <p> 
+                    Si es positivo y encontraste un conflicto, asegurate que en tu ordenador se encuentre instalado el programa DiffMergue, lo puedes descargar en <a class="anna" href="https://sourcegear.com/diffmerge/downloads.php">Descargar DiffMergue.</a>
+                <p>
+            
 
-            <li>Dirigete a Source Tree y en la parte izquierda de la pantalla saldrá en master el símbolo de error que es un triángulo amarillo y un signo de admiración.</li>
+            <li class="color2"> <strong> Paso 3</strong> </li>
+                <p>
+                    Dirigete a Source Tree y en la parte izquierda de la pantalla saldrá en master el símbolo de error que es un triángulo amarillo y un signo de admiración.
+                </p>
+            
 
-            <li>Una vez tengas identificado el conflicto, haz click derecho sobre el conflicto y presiona en donde dice "resolve conflict".</li>
+            <li class="color2"> <strong> Paso 4 </strong> </li>
+                <p>
+                    Una vez tengas identificado el conflicto, haz click derecho sobre el conflicto y presiona en donde dice "resolve conflict"
+                </p>
+            
 
-            <li>Se abrirá una página de DiffMergue en donde se verán tres columnas, en la central vas a observar lo que va a ser como resultado final, en la derecha tus modificaciones y en la izquierda las modificaciones que haya realizado el otro desarrollador.</li>
+            <li class="color2"> <strong> Paso 5 </strong> </li>
+                <p>
+                    Se abrirá una página de DiffMergue en donde se verán tres columnas, en la central vas a observar lo que va a ser como resultado final, en la derecha tus modificaciones y en la izquierda las modificaciones que haya realizado el otro desarrollador.
+                </p>
+            
 
-            <li>Finalmente al salvar tu archivo y recargar la página web observarás los cambios.</li>
-        </ol>
-        <h3 class="titulos">FUNCIÓN STASH</h3>
-        <p class="texto">
+            <li class="color2"> <strong> Paso 6 </strong> </li>
+                <p> 
+                    Finalmente al salvar tu archivo y recargar la página web observarás los cambio
+                </p>
+    
+        </ul>
+        <h3 class="color1"> <strong> Función Stash</strong> </h3>
+        <p>
             Cuando vas a realizar cambios pero no haz activado la función de "Pull", puedes seleccionar tu cambio y oprimir el botón <strong>stash</strong> de tal manera que sourcetree lo guarda en una caja aparte y despues de haber hecho "Pull" puedes anexar lo que hiciste sin perder nada.
         </p>
-        <h3 class="titulos">Algunas ayudas extra</h3>
-        <a href="http://es.slideshare.net/aprendegit/conflictos-18132665"> Resolviendo Conflictos con GIT en Slideshare </a>
-        <br>
-        <a href="https://github.com/oslugr/curso-git/blob/master/texto/solucion_problemas.md">Solución de problemas con git</a>
+       
+        <h3 class="color1"> <strong> Links de interes </strong> </h3>
+        
+        <ul> 
+          <li>
+            <a class="anna" href="http://es.slideshare.net/aprendegit/conflictos-18132665"> Resolviendo Conflictos con GIT en Slideshare </a>
+          </li>
+
+          <li> 
+            <a class="anna"href="https://github.com/oslugr/curso-git/blob/master/texto/solucion_problemas.md">Solución de problemas con git</a>
+          </li>
+        </ul>
     </body>
 </html>
