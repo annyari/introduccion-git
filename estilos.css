@@ -3,6 +3,14 @@ body {
     font-size: 14px;
 }
 
+/*Contenedor Principal*/
+
+main {
+    max-width: 450px;
+    text-align: justify;
+    margin: 0 auto;
+}
+
 /* Titulos */
 h1 {
     font-family: Georgia, 'Times New Roman', serif;
@@ -22,6 +30,26 @@ h3.color {
 
 h3.color1 {
     color: orange;
+    position: relative;
+}
+
+h3.color1:before {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    top: 3px;
+    left: -17px;
+    border: 1px solid red;
+}
+
+h3.color1:after {
+    content: " - Título";
+    position: relative;
+    font-size: 11px;
+    color: #CCC;
+    font-weight: lighter;
 }
 
 h3.titulos {
@@ -126,6 +154,7 @@ nav.anna ul.navegacion-nivel1 > li:hover > ul.navegacion-nivel2 {
     position: absolute;
     background: #CAF1DE;
     top: 82px;
+    z-index: 10;
 }
 
 nav.anna ul.navegacion-nivel1 > li > a { 
@@ -145,31 +174,6 @@ nav.anna ul.navegacion-nivel2 > li.impar {
 main > ol > li:nth-child(2) {
     color: red;
 }
-
-/*este es mi diseño :) ANNA2 html semántico */
-
-/*nav.anna2{
-    background: #E9EAF1;
-}
-
-nav.anna2 ul.navegacion-nivel1 {    
-    margin: 10px 0px;
-    display: block;
-}
-
-nav.anna2 ul.navegacion-nivel1 > li {
-    display: block;
-}
-
-nav.anna2 ul.navegacion-nivel1 > li > a { 
-    padding: 10px;
-    font-size: 15px;
-    display: block;
-}
-
-nav.anna2 ul.navegacion-nivel2 {
-    display: none;
-}*/
 
 /*estilos modelo de caja*/
 
