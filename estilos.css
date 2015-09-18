@@ -13,11 +13,11 @@ main {
 
 /* Titulos */
 h1 {
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Courier New', monospace ;
 }
 
 h1.titulo {
-    font-family: 'arial narrow', serif;
+    font-family: 'Courier New', monospace;
 }
 
 h2 {
@@ -26,11 +26,13 @@ h2 {
 
 h3.color {
     color:green;
+    font-family: 'Courier New', monospace;
 }
 
 h3.color1 {
     color: orange;
     position: relative;
+    font-family: 'Courier New', monospace;
 }
 
 h3.color1:before {
@@ -54,11 +56,13 @@ h3.color1:after {
 
 h3.titulos {
     color: #37B8DB;
+    font-family: 'Courier New', monospace;
 }
 
 /* Parrafos */
 p {
     color: gray;
+    font-family: 'Courier New', monospace;
 }
 
 p.otroslinks.links {
@@ -80,6 +84,7 @@ li {
 
 li.color2 {
     color:red;
+    font-family: 'Courier New', monospace;
 }
 
 
@@ -94,6 +99,7 @@ li.par {
 /* Anclas */
 a.anna {
     color:red;
+    font-family: 'Courier New', monospace;
 }
 
 /* Clases Genéricas */
@@ -208,6 +214,11 @@ ul.listas {
 }
 li.colorlist {
     font-size: 14px;
+    font-family: 'Courier New', monospace;
+}
+
+ul.colorlist > li {
+    color: gray;
     font-family: 'Courier New', monospace;
 }
 

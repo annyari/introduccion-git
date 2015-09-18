@@ -21,24 +21,24 @@
                 <li>
                     <a href="">Git</a>
                     <ul class="navegacion-nivel2">
-                        <li class="impar"><a href="git.html">Git (Anna)</a></li>
-                        <li class="par"><a href="resolucion-conflictos.html">Resolución de conflictos (Naty)</a></li>
+                        <li class="impar"><a href="git.html">Git</a></li>
+                        <li class="par"><a href="resolucion-conflictos.html">Resolución de conflictos</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="">HTML</a>
                     <ul class="navegacion-nivel2">
-                        <li class="impar"><a href="html-semantico.html">HTML Semántico (Anna)</a></li>
+                        <li class="impar"><a href="html-semantico.html">HTML Semántico</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="">CSS</a>
                     <ul class="navegacion-nivel2">
-                        <li class="impar"><a href="css.html">CSS (Naty)</a></li>
+                        <li class="impar"><a href="css.html">CSS</a></li>
                         <li class="par"><a href="modelo-caja.html">Modelo de Caja</a></li>
                         <li class="impar"><a href="posicionamiento.html">Posicionamiento</a></li>
                          <li class="par"><a href="pseudo-elementos.html">Pseudo-Elementos</a></li>
-                        <li class="impar"><a href"pseudo-selectores.html">Pseudo-Selectores</a></li>
+                        <li class="impar"><a href="pseudo-selectores.html">Pseudo-Selectores</a></li>
                     </ul>
                 </li>
             </ul>
@@ -47,48 +47,58 @@
 
         <!-- Aquí empieza el contenido principal -->
         <main>
-            <h3 class="color1"> <strong> Qué son los Pseudo Elementos y las Pseudo Clases?</strong> </h3>
+            <h3 class="color1"> <strong> Qué son los Pseudo Selectores?</strong> </h3>
             <p>
-               Los selectores de CSS, las pseudo-clases y todos los elementos HTML no son suficientes para poder aplicar estilos a algunos elementos especiales. Si se desea por ejemplo cambiar el estilo de la primera línea de texto de un elemento, no es posible hacerlo con las utilidades anteriores.
+               En CSS, las reglas de las equivalencias de patrones determinan cuales reglas de estilo se aplican a los elementos en la estructura del documento. Estos patrones, denominados selectores, pueden ir desde el simple nombre de un elemento hasta complejos patrones contextuales. Si todas las condiciones en el patrón son verdaderas para un determinado elemento, el selector equivale al elemento.
 
-               La primera línea del texto normalmente es variable porque el usuario puede aumentar y disminuir la ventana del navegador, puede disponer de más o menos resolución en su monitor y también puede aumentar o disminuir el tamaño de letra del texto.
-
-               La única forma de poder seleccionar estos elementos especiales es mediante los pseudo-elementos definidos por CSS para este propósito.
-            </p>
-
-            <p>
-               En CSS, el estilo se atribuye a un elemento basado en su posición dentro de la estructura del documento. Este sencillo modelo es suficiente para muchos casos, pero algunos temas comunes en la edición pueden no ser posibles por medio de la estructura del documento. Por ejemplo, en HTML 4.0, ningún elemento se refiere a la primera línea de una párrafo y, por consiguiente, ningún selector CSS simple puede refererirse a ella.
+               La distinción entre mayúsculas/minúsculas en los nombres de los elementos de los selectores, dentro del lenguaje del documento, depende del lenguaje del documento. Por ejemplo, en HTML, los nombres de los elementos son insensibles a la diferencia mayúsculas/minúsculas, pero en XML sí hacen distinción entre mayúsculas y minúsculas.
             </p>
 
             <ul>
               <li>
-                  <p>
-                    Los pseudo-elementos crean abstracciones acerca de la estructura del documento más allá de aquellas especificadas por el lenguaje del documento. Por ejemplo, los lenguajes de documento no ofrecen mecanismos para acceder a la primera letra o a la primera línea del contenido de un elemento. Los pseudo-elementos de CSS permiten a los diseñadores de hojas de estilo referirse a esta información inaccesible por otros medios. Los pseudo-elementos también pueden proporcionar a los diseñadores de hojas de estilo un modo de asignar estilos a un elemento que no existe en el documento fuente (ej., los pseudo-elementos :before y :after permite acceder al contenido generado).
+                <h3 class="color1"> <strong>Sintaxis de los selectores</strong></h3>
+                <p>
+                    Un selector simple es tanto un selector de tipos como un selector universal seguido inmediatamente por cero o más selectores de atributos, selectores de ID o pseudo-clases, en cualquier orden. El selector simple es equivalente si todos sus componentes son equivalentes.
+                </p>
+
+                <p>
+                    Un selector es una cadena de uno o más selectores simples separados por combinadores. Los combinadores son: espacio en blanco, ">" y "+". El espacio en blanco puede aparecer entre un combinador y los selectores simples que están próximos.
+                </p>
+
+                <p>
+                    Los elementos de la estructura del documento que equivalen a un selector son llamados sujetos del selector. Un selector que consiste en un solo selector simple se corresponde con cualquier elemento que satisface sus requisitos. Anteponiendo un selector simple y un combinador a una cadena se imponen restricciones adicionales para la equivalencia, de este modo los sujetos de un selector son siempre un sub-conjunto de los elementos que equivalen al selector simple del extremo derecho.
+                </p>
+
+                <p>
+                    Un pseudo-elemento puede añadirse al último selector simple en una cadena, en cuyo caso la información del estilo se aplica a la sub-parte de cada sujeto.
                 </p>
               </li>
 
               <li> 
-                  <p>
-                    Las pseudo-clases clasifican a los elementos basado en características más allá de su nombre, atributos o contenido; en principio, atributos que no pueden deducirse de la estructura del documento. Las pseudo-clases pueden ser dinámicas, en el sentido de que un elemento puede adquirir o perder una pseudo-clase a medida que el usuario interactúa con el documento. La excepción es ':first-child', que puede deducirse de la estructura del documento.
-                    </p>
+                 <h3 class="color1"> <strong>SSelectores de descendientes</strong></h3>
+                <p>
+                    A veces, los autores pueden querer selectores que se correspondan con un elemento que es el descendiente de otro elemento en la estructura del documento (ej., "Que equivalga a aquellos elementos EM que están contenidos en un elemento H1"). Los selectores de descendientes expresan tal relación dentro de un patrón. Un selector de descendiente se compone de dos o más selectores separados por un espacio en blanco. Un selector de descendiente de la forma "A B" equivale cuando un elemento B en un descendiente arbitrario de algún elemento antepasado A.
+                </p>
               </li>
             </ul>
 
-            <h3 class="color1"> <strong> Cómo funcionan?</strong> </h3>
+            <h3 class="color1"> <strong> Cómo funcionan? </strong> </h3>
             <p>
-                La pseudo-clase :first-child equivale a un elemento que es el primer hijo de algún otro elemento.
-
-                En el ejemplo siguiente, el selector equivale a cualquier elemento P que sea el primer hijo de un elemento DIV. La regla elimina el sangrado del primer párrafo de un DIV:
-
-                (DIV > P:first-child { text-indent: 0 } ) Este selector sería equivalente a P dentro de DIV pero no se correspondería con el segundo P en el siguiente fragmento. La siguiente regla especifica 'bold' para el peso de la fuente de cualquier elemento EM que es algún descendiente de un elemento P que es un primer hijo.
+                Valores predeterminados de los atributos en la DTD
             </p>
 
-            <h3 class="color1"> <strong> Posibilidad y usos de Pseudo Elementos </strong> </h3>
+            <p>
+                Las correspondencias tienen lugar en los valores de los atributos en la estructura del documento. Para lenguajes de documento fuera de HTML, los valores predeterminados de los atributos pueden definirse en una DTD o en cualquier otra parte. Las hojas de estilo deben diseñarse de manera que trabajen aún cuando los valores predeterminados no estén incluidos en la estructura del documento.
+            </p>
+
+            <h3 class="color1"> <strong>  Selectores de ID </strong> </h3>
 
             <p>
-                Como utilizar los pseudo-elementos en combinación de una fuente web para definir los iconos sociales de cada enlace?. Con solo introducir el enlace de la red social, con CSS nos encargamos de definir el icono de la red social según la url del enlace.
-                
-                Necesitaremos por tanto una fuente web con un buen repertorio de iconos sociales (font-awesome nos puede valer) y después definir un determinado número de reglas según la red social que vayamos a tener.
+               Los lenguajes del documento pueden contener atributos que se declaran como del tipo ID. Lo que hace especial a un atributo del tipo ID es que dos de tales atributos no pueden tener el mismo valor; cualquiera sea el lenguaje del documento, un atributo ID puede ser usado para identificar a su elemento de manera excluyente. En HTML todos los atributos ID son denominados "id"; las aplicaciones XML pueden nombrar de manera diferente a los atributos ID, pero se aplica la misma restricción. 
+            </p>
+
+            <p>
+               El atributo ID de un lenguaje de documento le permite a los autores asignar un identificador a una instancia del elemento dentro de la estructura del documento. Los selectores ID de CSS equivalen a una instancia del elemento basado en su identificador. Un selector ID de CSS contiene un "#" seguido inmediatamente por el valor de ID.
             </p>
         </main>
         <!-- Aquí termina el contenido principal -->
@@ -97,11 +107,7 @@
         <footer>
         <h3 class="color1"> <strong> Links de interes <strong> </h3>
             <ul>
-                <li>
-                    <a class="anna" href=
-                        "http://www.silocreativo.com/2014/11/pseudo-elementos-css-lo-que-todo-disenador-web-debe-saber/">Pseudo-Elementos CSS: Lo que todo diseñador web debe saber
-                    </a>
-                </li>
+               
                 <li>
                     <a class="anna" href= 
                         "http://www.sidar.org/recur/desdi/traduc/es/css/selector.html">Pseudo Selectores
