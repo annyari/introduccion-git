@@ -181,6 +181,7 @@ main > ol > li:nth-child(2) {
     color: red;
 }
 
+
 /*estilos modelo de caja*/
 
 h1.tittle1 {
@@ -369,7 +370,37 @@ div.cajita-4 {
     display: block;
 }
 
+/* ejercicios pseudo */
+h4.ejercicio {
+    color:green;
+}
 
+h4.ejercicio:before {
+    content: "Categoria -  ";
+    position: relative;
+    font-size: 12px;
+    color:tomato;
+    font-weight: bold;
+}
 
+p.colorines  {
+    color:navy;
+    }
 
+p.colorines:after { 
+    content: "Contenido";
+    position: absolute;
+    font-size: 9px;
+    color: burlywood;
+    font-weight: bold;
+}
 
+ul.colorones {
+    color:gray;
+}
+
+ul.colorones > li:hover {
+    background: bisque;
+    position: relative;
+    font-size: 15px;
+}
