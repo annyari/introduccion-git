@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello</title>
+  <link rel="stylesheet" type="text/css" href="jerarquia.css">
+</head>
+<body>
+  <h1>Hello!</h1>
+  <div class="padre">Padre!</div>
+  <span id="otro-padre" class="padre">Otro padre!</span>
+
+  <div class="padre">
+    Otro otro padre!
+    <div>Hijo</div>
+    <div>Otro hijo</div>
+  </div>
+
+  <div class="abuelo">
+    Abuelo!
+    <div class="padre">
+      Padre!
+      <div>Hijo 1</div>
+      <div>Hijo 2</div>
+      <div>Hijo 3</div>
+      <div>Hijo 4</div>
+      <div>Hijo 5</div>
+    </div>
+    <span class="padre">Tio</span>
+    <p class="padre">Sobrino</p>
+    <i class="padre">Primo</i>
+    <strong class="padre">Vecino</strong>
+  </div>
+
+</body>
+</html>

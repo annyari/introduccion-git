@@ -1,0 +1,58 @@
+/* Tipos de selectores */
+
+html {
+  font-family: 'Courier New', monospace;
+}
+
+/* Tag */
+body {
+  height: 900px;
+  color: black;
+}
+
+/* Class */
+.padre {
+  color: blue;
+}
+
+/* Id */
+#otro-padre {
+  color: red;
+}
+
+/* Separado por comas */
+div.padre,
+div#otro-padre {
+  font-weight: bold;
+}
+
+/* Hijo --> Child selector */
+div.abuelo div {
+  color: orange;
+}
+
+/* Hijo directo --> Direct Child Selector */
+div.padre > div {
+  color: green;
+}
+
+/* Pseudo clase --> Pseudo Class */
+div.abuelo > div.padre > div:first-child {
+  color: purple;
+}
+
+/* Hermano (adyacente) --> Adjacent Selector */
+div.abuelo > div.padre > div:nth-child(2) ~ div {
+  color: pink;
+}
+
+/* Hermano (directo) --> Sibling selector */
+div.abuelo > div.padre > div:nth-child(3) + div {
+  color: aqua;
+}
+
+/* Universal */
+div.abuelo * {
+  font-size: .8em;
+}
+
